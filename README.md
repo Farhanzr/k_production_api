@@ -77,11 +77,11 @@ Here are steps to be taken to run the project successfully:
 9) In the .env file, add database information to allow Laravel to connect to the database. Fill in the DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, and DB_PASSWORD options to match the credentials of the database you just created.
 10) Migrate the database. Simply run "php artisan migrate" without "".
 11) Once done migrating, you can run the program. I recommend you to use this command "php artisan serve --host=localhost --port=8080"
-12) Open Postman API, and enter this link http://localhost:8055/api/register-employee and make sure method is POST.
+12) Open Postman API, and enter this link http://localhost:8080/api/register-employee and make sure method is POST.
 13) Go to Body selection and choose form-data radio button.
 14) Insert key as these : name, identity_no, phone, email, department. Then, insert the value according to your preferences.
 15) Click send to store the data.
 16) To view the registered employee, enter this link http://localhost:8080/api/employee-list and make sure method is GET.
-17) To edit selected employee, enter this link http://localhost:8055/api/post-edit?profile={{uuid}} and make sure method is POST. Please note that the {{uuid}} value can be obtained from Employee's table.
-18) To delete selected employee, enter this link http://localhost:8055/api/delete-employee?profile={{uuid}} and make sure method is POST. Please note that the {{uuid}} value can be obtained from Employee's table.
+17) To edit selected employee, enter this link http://localhost:8080/api/post-edit?profile={{uuid}} and make sure method is POST. Please note that the {{uuid}} value can be obtained from Employee's table.
+18) To delete selected employee, enter this link http://localhost:8080/api/delete-employee?profile={{uuid}} and make sure method is POST. Please note that the {{uuid}} value can be obtained from Employee's table.
 19) That's all the program can done. Thank you.
